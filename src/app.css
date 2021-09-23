@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+
+@tailwind base;
+/* Write your global styles here, in PostCSS syntax */
+
+.card{
+  @apply rounded bg-white border-gray-200 shadow-md overflow-hidden relative;
+}
+
+.badge{
+  @apply absolute top-0 ml-2 p-2 mt-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full;
+}
+
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scroll-snap-y {
+    scroll-snap-type: y mandatory;
+  }
+  .scroll-snap-x {
+    scroll-snap-type: x mandatory;
+  }
+  .scroll-snap-start {
+    scroll-snap-align: start;
+  }
+}
+
