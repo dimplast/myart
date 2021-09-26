@@ -14,7 +14,10 @@ const config = {
 			},
 			fontFamily: {
 				petit: ['Italianno'],
-				carattere: ['Carattere']
+				carattere: ['Carattere'],
+				osv: ['Oswald'],
+				caramel: ['Caramel'],
+				libre:['"Gemunu Libre"']
 			}
 		}
 	},
