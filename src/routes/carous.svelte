@@ -46,7 +46,7 @@
 		{#each images as image}
 			<div class="flex flex-col justify-center items-center">
 				<img src={image.path} alt="">
-				<div class="text-white font-petit text-5xl my-8">{image.path.replace(/^.*[\\\/]/, '')}</div>
+				<div class="text-white font-petit text-5xl my-8">{image.path.replace(/^.*[\\\/]/, '').split('.').slice(0, -1).join('.')}</div>
 			</div>
 		{/each}
 	</svelte:component>
